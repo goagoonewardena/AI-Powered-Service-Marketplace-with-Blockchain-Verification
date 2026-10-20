@@ -59,10 +59,10 @@ function Login() {
           </button>
           <div className="my-[23px] flex items-center gap-3.5 whitespace-nowrap font-mono text-[10px] uppercase text-[#a1aaa6] before:h-px before:flex-1 before:bg-[#e1e6e3] after:h-px after:flex-1 after:bg-[#e1e6e3]">or continue with email</div>
           <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
-            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="email">Email address</label>
+            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="email">Email address <span className="text-red-500" aria-hidden="true">*</span></label>
             <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
             <div className="flex items-center justify-between">
-              <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="password">Password</label>
+              <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="password">Password <span className="text-red-500" aria-hidden="true">*</span> <span className="font-normal text-[#7b9187]">(8+ characters)</span></label>
               <button type="button" className="text-[11px] font-medium text-[#4b9276] hover:underline">Forgot password?</button>
             </div>
             <div className="relative">

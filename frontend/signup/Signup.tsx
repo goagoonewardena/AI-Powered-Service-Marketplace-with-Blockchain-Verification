@@ -61,9 +61,9 @@ function Signup() {
           <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
             <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="name">Full name</label>
             <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="name" name="name" type="text" placeholder="Alex Morgan" autoComplete="name" required />
-            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="signup-email">Email address</label>
+            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="signup-email">Email address <span className="text-red-500" aria-hidden="true">*</span></label>
             <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="signup-email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
-            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="signup-password">Password</label>
+            <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="signup-password">Password <span className="text-red-500" aria-hidden="true">*</span> <span className="font-normal text-[#7b9187]">(8+ characters)</span></label>
             <div className="relative">
               <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 pr-[52px] text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="signup-password" name="password" type={showPassword ? 'text' : 'password'} placeholder="At least 8 characters" autoComplete="new-password" minLength={8} required />
               <button className="absolute right-3 top-3 text-[11px] font-medium text-[#6c9f87]" type="button" onClick={() => setShowPassword(!showPassword)}>{showPassword ? 'Hide' : 'Show'}</button>
