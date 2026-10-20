@@ -63,7 +63,7 @@ function Login() {
             <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="email" name="email" type="email" placeholder="you@example.com" autoComplete="email" required />
             <div className="flex items-center justify-between">
               <label className="text-[12px] font-semibold text-[#43524c]" htmlFor="password">Password <span className="text-red-500" aria-hidden="true">*</span> <span className="font-normal text-[#7b9187]">(8+ characters)</span></label>
-              <button type="button" className="text-[11px] font-medium text-[#4b9276] hover:underline">Forgot password?</button>
+              <a className="text-[11px] font-medium text-[#4b9276] hover:underline" href="/forgotpassword/">Forgot password?</a>
             </div>
             <div className="relative">
               <input className="mb-2 w-full rounded-[6px] border border-[#dbe3df] bg-white p-3 pr-[52px] text-[13px] text-[#193a31] outline-none placeholder:text-[#afb9b5] focus:border-[#72ae94] focus:ring-[3px] focus:ring-[#72ae9421]" id="password" name="password" type={showPassword ? 'text' : 'password'} placeholder="Enter your password" autoComplete="current-password" minLength={8} required />
