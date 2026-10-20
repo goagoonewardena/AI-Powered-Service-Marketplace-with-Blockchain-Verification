@@ -70,7 +70,7 @@ function ForgotPassword() {
             </div>
           )}
           <p className="mt-[27px] text-center text-[12px] text-[#89948f]">
-            Remember your password? <a className="font-semibold text-[#3b8769]" href="/">Sign in</a>
+            Remember your password? <a className="font-semibold text-[#3b8769]" href="/login/">Sign in</a>
           </p>
         </div>
       </section>

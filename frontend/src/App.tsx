@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
-import ForgotPassword from '../forgotpassword/ForgotPassword'
-import Login from '../login/Login'
-import Signup from '../signup/Signup'
+import AppRouter from '../routers/AppRouter'
 import Splash from '../splash/Splash'
 
 function App() {
@@ -16,15 +14,7 @@ function App() {
     return <Splash />
   }
 
-  if (window.location.pathname.startsWith('/signup')) {
-    return <Signup />
-  }
-
-  if (window.location.pathname.startsWith('/forgotpassword')) {
-    return <ForgotPassword />
-  }
-
-  return <Login />
+  return <AppRouter />
 }
 
 export default App
