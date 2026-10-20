@@ -10,3 +10,13 @@
 }
 
 body { margin: 0; min-width: 320px; }
+
+@theme {
+  --animate-splash-progress: splash-progress 1.5s ease-in-out infinite;
+}
+
+@keyframes splash-progress {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(250%); }
+}
