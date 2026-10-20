@@ -108,7 +108,7 @@ function Landing() {
       </section>
 
       <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-[#e1e9e4] px-6 py-7 text-xs text-[#899c94] sm:flex-row sm:items-center sm:justify-between lg:px-10">
-        <span>© 2024 VeriServe</span>
+        <span>© 2026 VeriServe</span>
         <span>Every profile is verified on-chain</span>
       </footer>
     </main>

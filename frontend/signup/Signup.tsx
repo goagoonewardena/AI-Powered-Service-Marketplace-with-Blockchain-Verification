@@ -39,7 +39,7 @@ function Signup() {
         </div>
         <p className="relative z-10 m-0 flex items-center gap-[9px] text-[10px] text-[#728a81]">
           <span className="h-1.5 w-1.5 rounded-full bg-[#73c5a3] shadow-[0_0_0_4px_#73c5a31a]" /> Every profile is verified on-chain
-          <span className="mx-1 h-3 w-px bg-[#36534a]" /> © 2024 VeriServe
+          <span className="mx-1 h-3 w-px bg-[#36534a]" /> © 2026 VeriServe
         </p>
       </section>
 
